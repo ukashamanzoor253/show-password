@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>show-hide-password</title>
+</head>
+<body>
+    <div class="input">
+        <input type="password", id="password", placeholder="password">
+        <img id="img" src="eye-close.png" >
+    </div>
+    <script>
+
+      let img = document.getElementById('img')
+      let password = document.getElementById('password')
+
+      img.onclick=function () {
+
+        if (password.type=='password'){
+            password.type='text';
+            img.src = 'eye-open.png';
+        }
+        else {
+            password.type = 'password';
+            img.src = 'eye-close.png';
+
+        }
+      }
+
+
+    </script>
+</body>
+</html>
